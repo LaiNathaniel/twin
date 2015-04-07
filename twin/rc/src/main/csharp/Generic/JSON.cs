@@ -325,7 +325,7 @@ namespace Twin.Generic {
 
         public static object ToObject(string s) {
 			if(s == null)
-				return null;
+				return new Dictionary<string, object>();
             using (TextReader reader = new StringReader(s)) {
                 return Read(reader);
             }
